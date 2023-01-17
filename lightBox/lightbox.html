@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	#lightbox {
+    	width:0;
+        height:0;
+        position:fixed;
+        top:0;
+        overflow:hidden;
+        background-color: lightgrey;
+        transition: all 1s ease-in-out;
+    }
+    #lightbox:target {
+    	width:30%;
+        height:30%;
+        margin:25% 0 0 25%;
+        
+    }
+    
+</style>
+</head>
+<body>
+
+<div>
+	<a href="#lightbox"> Click Me </a>
+</div>
+
+<div id="lightbox">
+	<a href="#"> X </a>
+	<p> hi Asgar </p>
+</div>
+
+</body>
+</html>
