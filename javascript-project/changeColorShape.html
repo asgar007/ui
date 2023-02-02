@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeShapeColor</title>
+</head>
+<style>
+    #div1{
+        height:20vh;
+        width:20vw;
+        background-color: blue;
+        border-radius: 50%;
+        position: relative;
+        margin: 10%;
+    }
+    #inner{
+        height: 50%;
+        width: 50%;
+        background-color: red;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+    #div2 button{
+        display: block;
+        margin: 3%;
+    }
+</style>
+<body>
+    <div id="div1">
+        <div id="inner"></div>
+    </div>
+    <div id="div2">
+        <button id="btn1">Change Color</button>
+        <button id="btn2">Change Shape</button>
+    </div>
+    <!-- JS -->
+    <script>
+        var count = 0;
+        document.getElementById("btn1").onclick = changeColor;
+        function changeColor() {
+        count++;    
+        document.getElementById("div1").style.backgroundColor = "green";
+        return false;
+    } 
+    // change shape button
+    var count1 = 0;
+        document.getElementById("btn2").onclick = changeShape;
+        function changeShape() {
+        count1++;    
+        console.log("inner")
+        document.getElementById("inner").style.transform = "skew(-30deg)";
+        return false;
+    }
+    </script>
+</body>
+</html>
