@@ -3,9 +3,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-    <title>Asgar Ali Resume</title>
+    <title>Resume-Practice</title>
     <link rel="stylesheet" type="text/css" href="resume.css">
-    <link rel="stylesheet" type="text/css" href="resume-responsive.css">
+    <!-- <link rel="stylesheet" type="text/css" href="resume-responsive.css"> -->
     <script src="https://kit.fontawesome.com/ac4dcd9cf2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -78,42 +78,42 @@
                 </p>
             </div>
         </section>
-        <section id="skill">
+        <section id="skills">
             <h1 class="section-heading mb75px">
                 <span>
                     <i class="fa-solid fa-chalkboard-user"></i>
                 </span>
                 <span> Skills </span>
             </h1>
-            <div class="skills-container">
+            <div id="skill-part" class="skills-container">
                 <div class="skill-progress">
-                    <div class="seventy-percent mb-blue">
+                    <div class="seventy-percent mb-blue" data-bar-width="75">
                         <div class="skill-name">JAVA</div>
                     </div>
                 </div>
 
                 <div class="skill-progress">
-                    <div class="eighty-five-percent mb-red">
+                    <div class="eighty-five-percent mb-red" data-bar-width="90">
                         <div class="skill-name">HTML</div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="seventy-percent mb-green">
+                    <div class="seventy-percent mb-green" data-bar-width="75">
                         <div class="skill-name"> CSS </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="eighty-five-percent mb-violet">
+                    <div class="eighty-five-percent mb-violet" data-bar-width="75">
                         <div class="skill-name"> Javascript </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="seventy-percent mb-blue">
+                    <div class="seventy-percent mb-blue" data-bar-width="70">
                         <div class="skill-name"> SpringBoot </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="seventy-percent mb-green">
+                    <div class="seventy-percent mb-green" data-bar-width="85">
                         <div class="skill-name"> MongoDB </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                 <span> Work Experience </span>
             </h1>
             <div class="timeline-container">
-                
+
                 <div class="timeline-box">
                     <div class="timeline-head">
                         <img src="https://professionallyspeaking.net/wp-content/uploads/2017/04/infosys-logo.jpg">
@@ -144,13 +144,13 @@
                 <div class="timeline-box">
 
                 </div>
-                
+
                 <div class="timeline-line">
                     <div class="timeline-icon">
                         <i class="fas fa-plane"></i>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -214,7 +214,8 @@
                         <div><input type="text" class="input-field" placeholder="Your Name" required></div>
                         <div><input type="email" class="input-field" placeholder="Your Email" required></div>
                         <div><textarea class="input-field" placeholder="Message" required></textarea></div>
-                        <div><a href="mailto:asgar.f98@gmail.com"><input type="button" class="white-border-transparent-button" id="submit" value="SEND MESSAGE"></a></div>
+                        <div><a href="mailto:asgar.f98@gmail.com"><input type="button"
+                                    class="white-border-transparent-button" id="submit" value="SEND MESSAGE"></a></div>
                     </form>
                 </div>
                 <div class="address-container">
@@ -250,6 +251,7 @@
         </section>
 
     </main>
+    <script src="resume.js"></script>
 </body>
 
 </html>
