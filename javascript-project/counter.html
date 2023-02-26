@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        #div1{
+            /* display: flex; */
+            width: 500px;
+            height: 100px;
+            margin: 5%;
+            background-color: aqua;
+        }
+        .div2{
+            width: 100%;
+        height: 30vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        p{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        p.next{
+            position: absolute;
+            top: 237px;
+            /* background-color: black; */
+        }
+        p.animate{
+            transition: all 0.5s;
+            top: 197px;
+            /* background-color: aliceblue; */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h2>Enter values Between 0 and 9</h2>
+        <input type="text"> 
+        <button onclick="startCounter()">Start Counter</button>
+    </div>
+    <div class="div2">
+        <p class="current">0</p>
+        <p class="next"> 1</p>
+    </div>
+</body>
+<script>
+    var current = document.querySelector('.current');
+    var next = document.querySelector('.next');
+
+    function startCounter(){
+        var interval = setInterval(animate, 1000);
+    }
+    function animate(){
+        console.log('fff');
+        next.classList.add('animate');
+        setTimeout(function(){
+            next.classList.remove('animate');
+        }, 500)
+    }
+</script>
+</html>

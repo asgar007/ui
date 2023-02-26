@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catch me</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,73,121,1) 35%, rgba(0,212,255,1) 100%);
+
+        }
+        .target{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="target"></div>
+</body>
+<script>
+    var target = document.querySelector('.target');
+    let moveStep = 10;
+    window.addEventListener('mouseover', ()=>{
+        console.log('hover');
+        target.style.left = parseInt(target.style.left) + moveStep + 'px';
+    })
+</script>
+</html>
