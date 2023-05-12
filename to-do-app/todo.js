@@ -31,6 +31,7 @@ async function fetchToDos(){
     }
 }
 
+
 function addTasksToDOM(task){
     const li = document.createElement('li');
     li.innerHTML = `
@@ -149,7 +150,7 @@ function handleClickListener(e){
         toggleTask(taskId);
         return;
     }
-    
+ 
 }
 
 function initializeApp (){

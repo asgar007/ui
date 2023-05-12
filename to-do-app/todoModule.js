@@ -163,6 +163,6 @@ var todoListApp = (function (){
     // we will not directly call rather, return an object containing part which need to access globally
     return {
         initialize: initializeApp,
-        test: test
+        test: test //for testing only
     }
 })()
